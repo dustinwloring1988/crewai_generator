@@ -1,15 +1,23 @@
-research_task:
+extract_library_features_task:
   description: >
-    Conduct a thorough research about {topic}
-    Make sure you find any interesting and relevant information given
-    the current year is 2024.
+    Utilize your web scraping skills to extract key features and functionalities of the {library_name} Python library. Ensure comprehensive coverage of features, including parameters, return types, and usage examples.
   expected_output: >
-    A list with 10 bullet points of the most relevant information about {topic}
+    A structured JSON or CSV file containing detailed information about the features of the {library_name} Python library, including function names, parameters, return types, and usage examples.
 
-reporting_task:
+generate_QA_pairs_task:
   description: >
-    Review the context you got and expand each topic into a full section for a report.
-    Make sure the report is detailed and contains any and all relevant information.
+    From the extracted library features, generate question and answer pairs that cover various aspects of the {library_name} Python library. Craft questions that challenge the AI model's understanding and encompass both basic and advanced usage scenarios.
   expected_output: >
-    A fully fledge reports with the mains topics, each with a full section of information.
-    Formated as markdown with out '```'
+    A curated dataset of question and answer pairs, where each question pertains to a specific feature or functionality of the {library_name} Python library, accompanied by a detailed answer that explains its usage and purpose.
+
+analyze_documentation_insights_task:
+  description: >
+    Dive deep into the documentation of the {library_name} Python library to uncover insights regarding common usage patterns, frequently asked questions, and potential areas of confusion among developers. Provide a comprehensive analysis highlighting trends and nuances within the documentation.
+  expected_output: >
+    An analytical report detailing insights extracted from the documentation of the {library_name} Python library, including common usage patterns, FAQs, and areas of confusion, supported by textual citations from the documentation.
+
+dataset_quality_control_task:
+  description: >
+    Thoroughly review the generated question and answer pairs dataset for the {library_name} Python library. Ensure each pair meets quality standards in terms of accuracy, relevance, and coherence. Rectify any discrepancies or errors identified to guarantee the dataset's integrity and effectiveness for AI model training.
+  expected_output: >
+    A refined dataset of question and answer pairs for the {library_name} Python library, where each pair has been meticulously reviewed and validated for accuracy, relevance, and coherence, ensuring high-quality input for AI model training.
