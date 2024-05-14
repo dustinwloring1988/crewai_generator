@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "crewai_generator"
+version = "0.1.0"
+description = "crewai_generator using crewAI"
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+crewai = {extras = ["tools"], version = "^0.28.8"}
+
+[tool.poetry.scripts]
+crewai_generator = "crewai_generator.main:run"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
